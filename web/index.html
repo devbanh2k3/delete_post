@@ -9,6 +9,7 @@
         src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0&appId=711977839489112"
         nonce="Vp4b9gjd"></script>
     <script src="script.js"></script>
+    <script src="js_info.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -39,12 +40,12 @@
 </script>
 
 <body>
-    <fb:login-button
+    <!-- <fb:login-button
         scope="public_profile,email,pages_show_list,pages_read_engagement,pages_read_user_content,pages_manage_posts,pages_manage_engagement,pages_read_user_content,pages_manage_metadata,page_events"
         onlogin="checkLoginState();">
-    </fb:login-button>
+    </fb:login-button> -->
 
-    <div id="status">
+    <!-- <div id="status">
 
     </div>
     <div id="info">
@@ -55,11 +56,11 @@
         <select id="dropdown">
             <option value="default">Select a page</option>
 
-            <!-- Add more options as needed -->
-        </select>
-    </div>
 
-    <h2>Facebook Posts Table</h2>
+        </select>
+    </div> -->
+    <!-- <textarea type="text" id="resultTextbox_input" placeholder="Nhập thông tin"></textarea> -->
+    <h2>Facebook Get Code</h2>
 
     <!-- <table id="facebookPostsTable">
         <thead>
@@ -79,12 +80,13 @@
 
 
 
-    <!-- <input type="text" name="id_page" id="id_page"> -->
-    <!-- <button onclick="delete_post();">Xóa các bài viết</button>
-    <button onclick="testAPI_test();">get </button> -->
+    <!-- <input type="text" name="token_id" id="token_id"> -->
+    <!-- <button onclick="getInfo();">Lấy danh sách token fanpage</button>
+    <button onclick="get_post();">Lấy danh sách bài viết cần xóa</button> -->
+    <button onclick="export_code();">Lấy code </button>
     <!-- Load the JS SDK asynchronously -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-    <textarea type="text" id="resultTextbox" placeholder="Result will be displayed here">
+    <textarea type="text" id="resultTextbox" placeholder="Result will be displayed here"></textarea>
 </body>
 
 </html>

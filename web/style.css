@@ -1,93 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-#status {
-    margin-bottom: 20px;
+header {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#fb-root {
+    display: none;
+    /* hide fb-root */
+}
+
+#status,
+#info {
+    margin: 10px;
 }
 
 #dropdown-container {
-    position: relative;
-    width: 200px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 #dropdown {
-    width: 100%;
     padding: 10px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-
-#resultTextbox {
-    width: 90%;
-    /* Đặt chiều rộng của textbox */
-    height: 600px;
-    /* Đặt chiều cao của textbox */
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th,
-td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
+    font-size: 16px;
 }
 
 #options-container {
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
-    max-height: 200px;
+    max-height: 150px;
     overflow-y: auto;
     border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .option {
     padding: 10px;
+    font-size: 16px;
     cursor: pointer;
+    background-color: #fff;
     transition: background-color 0.3s;
 }
 
 .option:hover {
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
 }
 
-#id_page {
-    margin-bottom: 20px;
+#resultTextbox_input {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 300px;
 }
 
 button {
+    background-color: #4CAF50;
+    color: white;
     padding: 10px;
+    font-size: 16px;
     cursor: pointer;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
+
+#resultTextbox {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+h2 {
+    color: #333;
+    margin: 10px;
+}
+
+/* Add more styles as needed */
